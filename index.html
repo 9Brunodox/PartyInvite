@@ -10,6 +10,64 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="App">
+        <aside>
+            <div class="aside-container">
+                <header class="flex">
+                    <img src="assets/icons/Logo.svg" alt="">
+                    <div class="aside-text flex">
+                        <h1>Festivite</h1>
+                        <p>Crie um convite digital para seu evento</p>
+                    </div>
+                </header>
+            </div>
+        </aside>
+        <main class="flex">
+            <div class="main-container flex">
+                <h2>Crie seu convite</h2>
     
+                <form action="">
+                    <fieldset class="event-info">
+                        <legend>
+                            <img src="assets/icons/calendar.svg" alt="">
+                            <p>Sobre o evento</p>
+                        </legend>
+
+                        <div class="input-wrapper">
+                            <label for="title">Título</label>
+                            <input for="title" type="text" placeholder="Nome do evento"></input>
+                        </div>
+
+                        <div class="flex">
+                            <div class="input-wrapper flex-1">
+                                <label for="startDate">Início</label>
+                                <input for="startDate" type="datetime-local" placeholder="DD/MM/AAAA, --:--"></input>
+                            </div>
+                            <div class="input-wrapper flex-2">
+                                <label for="finishDate">Fim</label>
+                                <input for="finishDate" type="datetime-local" placeholder="DD/MM/AAAA, --:--"></input>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="input-wrapper flex-1">
+                                <label for="type">Tipo</label>
+                                <div class="toggle-options">
+                                    <input type="radio" name="type" id="type" value="presencial" checked>
+                                    <label for="presencial">
+                                        <img src="assets/icons/building-2.svg" alt="">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="input-wrapper flex-2">
+                                <label for="address">Local</label>
+                                <input for="address" type="text" placeholder="Link ou endereço"></input>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+    </div>
 </body>
 </html>

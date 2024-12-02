@@ -1,0 +1,24 @@
+form{
+    margin-top: 4rem;
+
+    max-width: 56rem;
+}
+
+fieldset{
+    border: none;
+    align-items: center;
+}
+
+.event-info{
+    legend{
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        margin-bottom: 2.4rem;
+
+        p{
+            font: var(--heading-sm);
+            color: var(--text-head);
+        }
+    }
+}

@@ -6,6 +6,7 @@
 
 html {
     font-size: 10px;
+    color: var(--text-body);
 }
 
 :root {
@@ -47,14 +48,29 @@ html {
     --font-baloo2: "Baloo 2", sans-serif;
     --font-openSans: "Open Sans", sans-serif;
 
-    --logo: 400 4rem/auto var(--font-leckeli);
-    --heading-md: bold 2.8rem/auto var(--font-baloo2);
-    --heading-sm: bold 1.8rem/auto var(--font-baloo2);
-    --body-md-regular: 400 1.6rem/auto var(--font-openSans);
-    --body-md-semibold: 600 1.6rem/auto var(--font-openSans);
-    --body-sm-regular: 400 1.4rem/auto var(--font-openSans);
-    --body-sm-semibold: 600 1.4rem/auto var(--font-openSans);
-    --body-xs-regular: 400 1.2rem/auto var(--font-openSans);
-    --body-xs-semibold: 600 1.2rem/auto var(--font-openSans);
+    --logo: 400 4rem var(--font-leckeli);
+    --heading-md: bold 2.8rem var(--font-baloo2);
+    --heading-sm: bold 1.8rem var(--font-baloo2);
+    --body-md-regular: 400 1.6rem var(--font-openSans);
+    --body-md-semibold: 600 1.6rem var(--font-openSans);
+    --body-sm-regular: 400 1.4rem var(--font-openSans);
+    --body-sm-semibold: 600 1.4rem var(--font-openSans);
+    --body-xs-regular: 400 1.2rem var(--font-openSans);
+    --body-xs-semibold: 600 1.2rem var(--font-openSans);
 
+}
+
+.flex{
+    display: flex;
+    gap: 1.6rem;
+}
+
+.flex-1{
+    flex: 1;
+    width: 50%;
+}
+
+.flex-2{
+    flex: 2;
+    width: 50%;
 }
