@@ -7,14 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div id="App">
         <aside>
             <div class="aside-container">
                 <header class="flex">
-                    <img src="assets/icons/Logo.svg" alt="">
+                    <img src="./assets/icons/Logo.svg" alt="">
                     <div class="aside-text flex">
                         <h1>Festivite</h1>
                         <p>Crie um convite digital para seu evento</p>
@@ -29,7 +29,7 @@
                 <form action="">
                     <fieldset class="event-info">
                         <legend>
-                            <img src="assets/icons/calendar.svg" alt="">
+                            <img src="./assets/icons/calendar.svg" alt="">
                             <p>Sobre o evento</p>
                         </legend>
 
@@ -43,7 +43,7 @@
                                 <label for="startDate">Início</label>
                                 <input for="startDate" type="datetime-local" placeholder="DD/MM/AAAA, --:--"></input>
                             </div>
-                            <div class="input-wrapper flex-2">
+                            <div class="input-wrapper flex-1">
                                 <label for="finishDate">Fim</label>
                                 <input for="finishDate" type="datetime-local" placeholder="DD/MM/AAAA, --:--"></input>
                             </div>
@@ -52,20 +52,60 @@
                         <div class="flex">
                             <div class="input-wrapper flex-1">
                                 <label for="type">Tipo</label>
-                                <div class="toggle-options">
-                                    <input type="radio" name="type" id="type" value="presencial" checked>
-                                    <label for="presencial">
-                                        <img src="assets/icons/building-2.svg" alt="">
-                                    </label>
+                                <div class="toggle-options flex">
+                                    <!-- Botão Presencial -->
+                                     <div id="presencial-container" class="toggle-content">
+                                         <input type="radio" name="type" id="Presencial" value="Presencial" class="Presencial" checked>
+                                         <div class="type-image"></div>
+                                         <label for="Presencial" class="toggle-label">
+                                             Presencial
+                                         </label>
+                                     </div>
+                                     <div id="online-container" class="toggle-content">
+                                         <!-- Botão Online -->
+                                         <input type="radio" name="type" id="Online" value="Online" class="Online">
+                                         <div class="type-image"></div>
+                                         <label for="Online" class="toggle-label">
+                                             Online
+                                         </label>
+                                     </div>
                                 </div>
                             </div>
-                            <div class="input-wrapper flex-2">
+                            <div class="input-wrapper flex-1">
                                 <label for="address">Local</label>
                                 <input for="address" type="text" placeholder="Link ou endereço"></input>
                             </div>
                         </div>
+
+                        <div class="input-wrapper">
+                            <label for="desc">Descrição</label>
+                            <textarea id="desc" name="desc" placeholder="Escreva sobre os detalhes do evento" rows="7" cols="20"></textarea>
+                        </div>
                     </fieldset>
                 </form>
+
+                <section id="personalization">
+                    <header>
+                        <img src="./assets/icons/paintbrush-vertical.svg" alt="">
+                        <h2>Personalização</h2>
+                    </header>
+                    <div class="main-color">
+                        <p>Cor principal</p>
+                        l<u>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li"></li>
+                            <li"></li>
+                        </u>
+                    </div>
+                </section>
             </div>
         </main>
     </div>

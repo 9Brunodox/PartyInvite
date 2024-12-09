@@ -32,6 +32,16 @@ select {
         }
     }
 
+    & textarea{
+        font: var(--body-md-regular);
+        color: var(--text-head);
+        resize: none;
+        &::placeholder{
+            color: var(--input-placeholder);
+            font: var(--body-sm-regular);
+        }
+    }
+
     & input[type="datetime-local"]{
         font: var(--body-md-regular);
         text-transform: uppercase;
