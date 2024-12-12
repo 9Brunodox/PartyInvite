@@ -1,3 +1,4 @@
+
 input,
 textarea,
 select {
@@ -10,41 +11,45 @@ select {
   background-color: var(--input-bg);
 
   padding: 1.2rem 1.6rem;
+
+  &::placeholder {
+    font: var(--body-md-regular);
+    color: var(--input-placeholder);
+  }
 }
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 1.6rem;
 
-.input-wrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    margin-top: 1.6rem;
+  & label {
+    font: var(--body-sm-regular);
+    color: var(--text-body);
+  }
 
-    & label{
-        font: var(--body-sm-regular);
-        color: var(--text-body);
+  & input[type="text"] {
+    font: var(--body-md-regular);
+    color: var(--text-head);
+    &::placeholder {
+      font: var(--body-md-regular);
+      color: var(--input-placeholder);
     }
+  }
 
-    & input[type="text"]{
-        font: var(--body-md-regular);
-        color: var(--text-head);
-        &::placeholder{
-            color: var(--input-placeholder);
-            font: var(--body-sm-regular);
-        }
+  & textarea {
+    font: var(--body-md-regular);
+    color: var(--text-head);
+    resize: none;
+    &::placeholder {
+      color: var(--input-placeholder);
+      font: var(--body-sm-regular);
     }
+  }
 
-    & textarea{
-        font: var(--body-md-regular);
-        color: var(--text-head);
-        resize: none;
-        &::placeholder{
-            color: var(--input-placeholder);
-            font: var(--body-sm-regular);
-        }
-    }
-
-    & input[type="datetime-local"]{
-        font: var(--body-md-regular);
-        text-transform: uppercase;
-        color: var(--input-placeholder);
-    }
+  & input[type="datetime-local"] {
+    font: var(--body-md-regular);
+    text-transform: uppercase;
+    color: var(--input-placeholder);
+  }
 }

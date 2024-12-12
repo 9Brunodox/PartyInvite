@@ -1,19 +1,83 @@
-#personalization{
-    margin-top: 4rem;
+#personalization {
+  margin-top: 4rem;
 
-    width: 66rem;
+  width: 100%;
 }
 
-.main-color{
+.main-color {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.6rem;
+  margin-top: 1.4rem;
+  width: 100%;
+}
+
+.input-checkbox {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 1.2rem;
+  width: 100%;
+
+  & label {
+    font: var(--body-sm-regular);
+    color: var(--text-head);
+  }
+}
+.color-options {
+  display: flex;
+  width: 100%;
+  gap: 2.2rem;
+  & .color-selection {
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 1.6rem;
-    margin-top: 1.4rem;
+    border: 2px solid transparent;
+    outline: 1px solid var(--input-stroke);
+    border-radius: 12rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
-    & p{
-        font: var(--body-sm-regular);
-        color: var(--text-body);
-
+    & input {
+      border-radius: 12rem;
+      padding: 2rem;
+      &[name="brand-light"] {
+        background-color: var(--brand-light);
+      }
+      &[name="navy"] {
+        background-color: var(--navy);
+      }
+      &[name="purple"] {
+        background-color: var(--purple);
+      }
+      &[name="fuschia"] {
+        background-color: var(--fuschia);
+      }
+      &[name="pink"] {
+        background-color: var(--pink);
+      }
+      &[name="orange"] {
+        background-color: var(--orange);
+      }
+      &[name="yellow"] {
+        background-color: var(--yellow);
+      }
+      &[name="lime"] {
+        background-color: var(--lime);
+      }
+      &[name="green"] {
+        background-color: var(--green);
+      }
+      &[name="cyan"] {
+        background-color: var(--cyan);
+      }
     }
+
+    &:has(:checked) {
+      border: 2px solid transparent;
+      outline: 1px solid var(--brand-light);
+    }
+  }
 }

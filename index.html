@@ -53,7 +53,6 @@
                             <div class="input-wrapper flex-1">
                                 <label for="type">Tipo</label>
                                 <div class="toggle-options flex">
-                                    <!-- Botão Presencial -->
                                      <div id="presencial-container" class="toggle-content">
                                          <input type="radio" name="type" id="Presencial" value="Presencial" class="Presencial" checked>
                                          <div class="type-image"></div>
@@ -62,7 +61,6 @@
                                          </label>
                                      </div>
                                      <div id="online-container" class="toggle-content">
-                                         <!-- Botão Online -->
                                          <input type="radio" name="type" id="Online" value="Online" class="Online">
                                          <div class="type-image"></div>
                                          <label for="Online" class="toggle-label">
@@ -90,20 +88,156 @@
                         <h2>Personalização</h2>
                     </header>
                     <div class="main-color">
-                        <p>Cor principal</p>
-                        l<u>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li"></li>
-                            <li"></li>
-                        </u>
+                        <div class="flex">
+                            <div class="input-checkbox">
+                                <label for="type">Cor principal</label>
+                                <div class="color-options flex">
+                                     <div class="color-selection">
+                                         <input type="checkbox" name="brand-light" id="brand-light" checked>
+                                     </div>
+                                     <div class="color-selection">
+                                         <input type="checkbox" name="navy" id="navy">
+                                     </div>
+                                     <div class="color-selection">
+                                        <input type="checkbox" name="purple" id="purple">
+                                    </div>
+                                    <div class="color-selection">
+                                        <input type="checkbox" name="fuschia" id="fuschia">
+                                    </div>
+                                    <div class="color-selection">
+                                        <input type="checkbox" name="pink" id="pink">
+                                    </div>
+                                    <div class="color-selection">
+                                        <input type="checkbox" name="orange" id="orange">
+                                    </div>
+                                    <div class="color-selection">
+                                        <input type="checkbox" name="yellow" id="yellow">
+                                    </div>
+                                    <div class="color-selection">
+                                        <input type="checkbox" name="lime" id="lime">
+                                    </div>
+                                    <div class="color-selection">
+                                        <input type="checkbox" name="green" id="green">
+                                    </div>
+                                    <div class="color-selection">
+                                        <input type="checkbox" name="cyan" id="cyan">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme flex">
+                        <label>Tema do Evento</label>
+                        <div class="theme-content">
+                            <div class="theme-card">
+                                <div class="card-image">
+                                    <img src="./assets/imgs/birthday.png" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <label>Aniversário</label>
+                                </div>
+                                <input type="checkbox" id="birthday" name="birthday">
+                            </div>
+                            <div class="theme-card">
+                                <div class="card-image">
+                                    <img src="./assets/imgs/infantil.png" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <label>Infantil</label>
+                                </div>
+                                <input type="checkbox" id="infantil" name="infantil">
+                            </div>
+                            <div class="theme-card">
+                                <div class="card-image">
+                                    <img src="./assets/imgs/formatura.png" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <label>Formatura</label>
+                                </div>
+                                <input type="checkbox" id="formatura" name="formatura">
+                            </div>
+                            <div class="theme-card">
+                                <div class="card-image">
+                                    <img src="./assets/imgs/casamento.png" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <label>Casamento</label>
+                                </div>
+                                <input type="checkbox" id="casamento" name="casamento">
+                            </div>
+                            <div class="theme-card">
+                                <div class="card-image">
+                                    <img src="./assets/imgs/chadebebe.png" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <label>Chá de bebê</label>
+                                </div>
+                                <input type="checkbox" id="chadebebe" name="chadebebe">
+                            </div>
+                            <div class="theme-card">
+                                <div class="card-image">
+                                    <img src="./assets/imgs/birthday.png" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <label>Chá de panela</label>
+                                </div>
+                                <input type="checkbox" id="chadepanela" name="chadepanela">
+                            </div>
+                            <div class="theme-card">
+                                <div class="card-image">
+                                    <img src="./assets/imgs/carnaval.png" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <label>Carnaval</label>
+                                </div>
+                                <input type="checkbox" id="carnaval" name="carnaval">
+                            </div>
+                            <div class="theme-card">
+                                <div class="card-image">
+                                    <img src="./assets/imgs/pascoa.png" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <label>Páscoa</label>
+                                </div>
+                                <input type="checkbox" id="pascoa" name="pascoa">
+                            </div>
+                            <div class="theme-card">
+                                <div class="card-image">
+                                    <img src="./assets/imgs/saojoao.png" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <label>São João</label>
+                                </div>
+                                <input type="checkbox" id="saojoao" name="saojoao">
+                            </div>
+                            <div class="theme-card">
+                                <div class="card-image">
+                                    <img src="./assets/imgs/halloween.png" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <label>Halloween</label>
+                                </div>
+                                <input type="checkbox" id="halloween" name="halloween">
+                            </div>
+                            <div class="theme-card">
+                                <div class="card-image">
+                                    <img src="./assets/imgs/natal.png" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <label>Natal</label>
+                                </div>
+                                <input type="checkbox" id="natal" name="natal">
+                            </div>
+                            <div class="theme-card">
+                                <div class="card-image">
+                                    <img src="./assets/imgs/other.png" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <label>Outro</label>
+                                </div>
+                                <input type="checkbox" id="other" name="other">
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>

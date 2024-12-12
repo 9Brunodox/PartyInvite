@@ -1,72 +1,70 @@
 @import url(./fields/index.css);
 
-body{
-    background-color: var(--shape-bg);
+body {
+  background-color: var(--shape-bg);
 }
 
 #App {
-    display: grid;
-    grid-template-columns: 40rem 1fr;
-  
-    height: 100vh;
-    padding: 2rem;
-    overflow: hidden;
-    gap: 2rem;
-  }
+  display: grid;
+  grid-template-columns: 40rem 1fr;
 
-aside{
-    background-image: url(../imgs/Background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    border-radius: 1.2rem;
-
-    header{
-        flex-direction: column;
-        padding: 3.2rem;
-        gap: 1.6rem;
-        align-items: flex-start;
-        text-align: left;
-        img{
-            height: 4.8rem;
-            width: 4.5rem;
-        }
-
-    }
-    .aside-text{
-        flex-direction: column;
-        gap: .4rem;
-
-        h1{
-            font: var(--logo);
-            color: var(--pink);
-        }
-
-        p{
-            font: var(--body-md-regular);
-            color: var(--text-head);
-            font-weight: 300;
-        }
-    }
-
+  height: 100vh;
+  padding: 2rem;
+  overflow: hidden;
+  gap: 2rem;
 }
 
-main{
+aside {
+  background-image: url(../imgs/Background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.2rem;
+
+  & header {
     flex-direction: column;
-    align-items: center;
-    overflow: auto;
-    background-color: var(--shape-body);
-    border-radius: 1.2rem;
+    padding: 3.2rem;
+    gap: 1.6rem;
+    align-items: flex-start;
+    text-align: left;
+    img {
+      height: 4.8rem;
+      width: 4.5rem;
+    }
+  }
+  & .aside-text {
+    flex-direction: column;
+    gap: 0.4rem;
 
-    .main-container{
-        flex-direction: column;
-        padding: 8rem 13rem;
-
-        h2{
-            color: var(--text-head);
-            font: var(--heading-md);
-        }
+    & h1 {
+      font: var(--logo);
+      color: var(--pink);
     }
 
+    & p {
+      font: var(--body-md-regular);
+      color: var(--text-head);
+      font-weight: 300;
+    }
+  }
+}
+
+main {
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  background-color: var(--shape-body);
+  border-radius: 1.2rem;
+
+  & .main-container {
+    flex-direction: column;
+    width: 50%;
+    padding: 5rem 0;
+
+    & h2 {
+      color: var(--text-head);
+      font: var(--heading-md);
+    }
+  }
 }
