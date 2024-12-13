@@ -3,7 +3,7 @@ input[type="checkbox"] {
 }
 
 #style {
-  margin-top: 1.6rem;
+  margin-top: 1rem;
 }
 
 .label {
@@ -112,8 +112,8 @@ input[type="checkbox"] {
     outline: none;
     color: var(--input-placeholder);
     font: var(--body-md-regular);
-    top: 40%;
-    left: 0;
+    opacity: 1;
+    z-index: 2;
 
     &:hover {
       color: var(--input-placeholder);
