@@ -8,6 +8,7 @@ select {
   border: 2px solid transparent;
   outline: 1px solid var(--input-stroke);
   background-color: var(--input-bg);
+  color: var(--text-head);
 
   padding: 1.2rem 1.6rem;
 
@@ -30,7 +31,8 @@ select {
   &:not(:focus) + .error,
   &:valid + .error {
     display: none;
-    border: 0.2rem solid var(--stroke-highlight);
+    border: 2px solid transparent;
+    outline: 1px solid var(--danger);
   }
 }
 .input-wrapper {

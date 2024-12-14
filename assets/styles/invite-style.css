@@ -97,47 +97,49 @@ input[type="checkbox"] {
 
 #cover-image {
   flex-direction: column;
-  position: relative;
   & .file-input::file-selector-button {
     inset: 0;
     opacity: 0;
   }
-  & .file-input {
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    height: 60%;
-    background-color: transparent;
+  & > .btn-content {
+    display: flex;
     border: none;
     outline: none;
-    color: var(--input-placeholder);
-    font: var(--body-md-regular);
-    opacity: 1;
-    z-index: 2;
-
-    &:hover {
-      color: var(--input-placeholder);
-      font: var(--body-md-regular);
-    }
+    background: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
   }
 
-  & div {
+  & .file-input {
+    display: flex;
+    outline: none;
+    background: none;
+    z-index: 2;
     align-items: center;
     text-align: center;
-
-    & .btn {
-      position: relative;
-      padding: 1.2rem 1.6rem;
-      border-radius: 0.8rem;
-      background-color: var(--shape-btn);
-      & svg {
-        width: 2rem;
-        height: 2rem;
-      }
-      & p {
-        color: var(--text-head);
-        font: var(--body-md-semibold);
-      }
+    width: 100%;
+    color: var(--input-placeholder);
+    font: var(--body-md-regular);
+    &::file-selector-button {
+      display: none;
+    }
+  }
+  & .btn-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 1.2rem 1.6rem;
+    border-radius: 0.8rem;
+    background-color: var(--shape-btn);
+    color: var(--text-head);
+    font: var(--body-md-regular);
+    & svg {
+      width: 2rem;
+      height: 2rem;
     }
   }
 }
